@@ -17,4 +17,6 @@
  
 ## Screenshots
 
+View the screenshots <a href="/screenshots">here</a>
+
  
