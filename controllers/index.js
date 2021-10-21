@@ -37,7 +37,7 @@ async function SignUp(data, callback) {
                 })
                 AssignToken(user, (err, token) => {
                     if (err) callback("Something bad happened", null)
-                    else callback(null, token)
+                    else callback(null, {token:token,user:user})
                 })
             }
             else {
@@ -66,7 +66,7 @@ async function Login(data, callback) {
             else {
                 AssignToken(checkifUserExists, (err, token) => {
                     if (err) callback("Something bad happened", null)
-                    else callback(null, token)
+                    else callback(null, {token:token,user:checkifUserExists})
                 })
             }
 
