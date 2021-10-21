@@ -7,9 +7,9 @@ const router = express.Router()
 router.post("/signup", InputVerification, (req, res) => {
     //pass name,email and password as req.body.data = {name:NAME,email:EMAIL,password:PASSWORD}
     
-    SignUp(req.body.data, (err, token) => {
+    SignUp(req.body.data, (err, data) => {
         if (!err) {
-            res.json({ token })
+            res.json({ data })
         }
         else {
             res.json({ error:err })
@@ -19,9 +19,9 @@ router.post("/signup", InputVerification, (req, res) => {
 
 router.post("/login", InputVerification, (req, res) => {
     //pass email and password as req.body.data = {email:EMAIL,password:PASSWORD}
-    Login(req.body.data, (err, token) => {
+    Login(req.body.data, (err, data) => {
         if (!err) {
-            res.json({ token })
+            res.json({ data})
         }
         else {
             res.json({ error:err})
