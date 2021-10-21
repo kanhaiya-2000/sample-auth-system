@@ -36,7 +36,7 @@ Make sure that `Content-type` is set to `application/json` in `headers`
 }
  
  ```
- Expected result: You should receive a jwt token.Note this token.
+ Expected result: You should receive a jwt token and user details.Note this token.
  
 > Testing `/login`
 `POST` https://etark12.herokuapp.com/login
@@ -51,7 +51,7 @@ Make sure that `Content-type` is set to `application/json` in `headers`
 }
  
  ```
-Expected result: You should receive a jwt token.Note this token.
+Expected result: You should receive a jwt token and user details.Note this token.
 
 > Testing `/home`
 
