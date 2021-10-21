@@ -24,7 +24,9 @@ View the screenshots <a href="/screenshots">here</a>
 Make sure that `Content-type` is set to `application/json` in `headers`
 
 > Testing `/signup`
+
  `POST` https://etark12.herokuapp.com/signup
+ 
  `body-->raw` 
  ```js
  {
@@ -38,8 +40,11 @@ Make sure that `Content-type` is set to `application/json` in `headers`
  ```
  Expected result: You should receive a jwt token and user details.Note this token.
  
+ 
 > Testing `/login`
+
 `POST` https://etark12.herokuapp.com/login
+
  `body-->raw` 
  ```js
  {
@@ -53,9 +58,11 @@ Make sure that `Content-type` is set to `application/json` in `headers`
  ```
 Expected result: You should receive a jwt token and user details.Note this token.
 
+
 > Testing `/home`
 
 `GET` https://etark12.herokuapp.com/home
+
 headers should contain `Authorization` set to `Bearer TOKEN_VALUE`
 
 Expected-result : 
